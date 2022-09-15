@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/js"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_patterns"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="349dp"
+        android:layout_height="54dp"
+        android:background="@drawable/frame"
+        android:ems="10"
+        android:hint="  Search..."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#BCFF40"
+        android:textColorHint="#BCFF40"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="206dp"
+        android:layout_height="68dp"
+        android:onClick="SendInformation"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintVertical_bias="0.294"
+        app:strokeColor="#FFEB3B" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="278dp"
+        android:layout_height="284dp"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/js" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
